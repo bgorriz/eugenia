@@ -9,11 +9,11 @@ public class JokeUtil {
 
     public static Map getJokeMap() {
         Map<String, String> map = new HashMap<>();
-        map.put("Airbus-A380", "Esto es un.");
-        map.put("Boeing-747", "Esto es el segundo chiste");
-        map.put("Boeing-767", "Esto es el tercer chiste");
-        map.put("Airbus-A320", "Esto es el cuarto chiste");
-        map.put("Concorde", "Esto es el quinto chiste");
+        map.put("Airbus-A380", "Saben aquel que diu... que es un tío que va corriendo detrás de un autobús y le dice un peatón: -No corra, no corra, que no lo va a alcanzar! -Pues lo tendré que intentar, porque soy el conductor.");
+        map.put("Boeing-747", "Leí en el periódico: “Mujer enseña el búlgaro”. Fui y era un idioma.");
+        map.put("Boeing-767", "Dice que te encuentran dos amigos. - Oye he encontrado trabajo. -Donde? - En Santiago. -De qué? -De Compostela");
+        map.put("Airbus-A320", "Saben aquel que diu.... que en una procesión le pregunta un señor a una señora: Oiga, quién es el muerto? -Creo que el que va dentro de la caja!");
+        map.put("Concorde", "Llega un tio a un portero automatico y dice: -No hay nieve en Saint Moris. Y al otro lado se escucha: -El espía vive en el sexto, gilipollas!");
         return map;
     }
 
