@@ -1,0 +1,35 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "eugenia",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "chisteIntent",
+                    "slots": [],
+                    "samples": [
+                        "explícame un chiste",
+                        "cuéntame un chiste",
+                        "chiste"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

@@ -1,2 +1,2 @@
-# eugenia
-alexa skill que cuenta chistes
+# Eugenia
+An Alexa Skill that explains jokes from almighty Eugenio
