@@ -5,7 +5,6 @@ import com.amazonaws.regions.Regions;
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.bgorriz.ask.eugenia.entity.Joke;
-import com.bgorriz.ask.eugenia.util.JokeUtil;
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
 import com.amazon.ask.model.Response;
@@ -29,15 +28,10 @@ public class JokeIntentHandler implements RequestHandler {
     @Override
     public Optional<Response> handle(HandlerInput input) {
 
-        List<String> keys = JokeUtil.getKeys();
-
-        if (keys.size() <= 0) {
-            keys = JokeUtil.getKeys();
-        }
-        int index = new Random().nextInt(keys.size());
+        int randomKey = new Random().nextInt(Integer.parseInt(System.getenv("totalKeys")));
         initDynamoDbMapper();
 
-        Joke joke = dynamoDb.load(Joke.class, 1);
+        Joke joke = dynamoDb.load(Joke.class, randomKey);
 
         String title = "Eugenia";
         //FIXME: If you would like to display additional text, please set the secondary text accordingly
